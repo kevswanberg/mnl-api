@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/mnl-api/django
+    working_directory: ~/repo/django
 
     docker:
       # specify the version you desire here
@@ -25,7 +25,6 @@ jobs:
         environment:
         - POSTGRES_USER: root
         - POSTGRES_DB: circle_db
-    working_directory: ~/repo
 
     steps:
       - checkout
